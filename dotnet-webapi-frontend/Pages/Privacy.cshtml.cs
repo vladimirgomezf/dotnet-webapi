@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace dotnet_webapi_razor.Pages
+namespace dotnet_webapi_frontend.Pages
 {
     public class PrivacyModel : PageModel
     {

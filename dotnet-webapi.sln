@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-webapi", "dotnet-webapi\dotnet-webapi.csproj", "{EC0AA617-D39E-47B8-BB14-89DA9F874344}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-webapi-razor", "dotnet-webapi-razor\dotnet-webapi-razor.csproj", "{85B3076C-89E8-4E89-A13B-626A116E587B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-webapi-frontend", "dotnet-webapi-frontend\dotnet-webapi-frontend.csproj", "{721C2806-FA88-4EC8-8B10-F8DDE9B1D91D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{EC0AA617-D39E-47B8-BB14-89DA9F874344}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC0AA617-D39E-47B8-BB14-89DA9F874344}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC0AA617-D39E-47B8-BB14-89DA9F874344}.Release|Any CPU.Build.0 = Release|Any CPU
-		{85B3076C-89E8-4E89-A13B-626A116E587B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85B3076C-89E8-4E89-A13B-626A116E587B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85B3076C-89E8-4E89-A13B-626A116E587B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85B3076C-89E8-4E89-A13B-626A116E587B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721C2806-FA88-4EC8-8B10-F8DDE9B1D91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721C2806-FA88-4EC8-8B10-F8DDE9B1D91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721C2806-FA88-4EC8-8B10-F8DDE9B1D91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721C2806-FA88-4EC8-8B10-F8DDE9B1D91D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
