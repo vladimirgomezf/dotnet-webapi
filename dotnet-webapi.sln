@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-webapi", "dotnet-webapi\dotnet-webapi.csproj", "{EC0AA617-D39E-47B8-BB14-89DA9F874344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-webapi-razor", "dotnet-webapi-razor\dotnet-webapi-razor.csproj", "{85B3076C-89E8-4E89-A13B-626A116E587B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-webapi-razor", "dotnet-webapi-razor\dotnet-webapi-razor.csproj", "{85B3076C-89E8-4E89-A13B-626A116E587B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
