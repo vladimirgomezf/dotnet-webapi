@@ -11,6 +11,7 @@ namespace dotnet_webapi_frontend.Pages.Persona
     {
         public void OnGet()
         {
+
         }
     }
 }
