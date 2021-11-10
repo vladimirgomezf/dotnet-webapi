@@ -24,7 +24,7 @@ namespace dotnet_webapi_frontend.Controllers
                 var results = res.Content.ReadAsStringAsync().Result;
                 per = JsonConvert.DeserializeObject<List<Persona>>(results);
             }
-            return View(per);
+            return Ok(per);
         }
     }
 }
