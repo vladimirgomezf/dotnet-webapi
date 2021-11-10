@@ -56,6 +56,21 @@ namespace dotnet_webapi
 
             app.UseRouting();
 
+            app.UseCors(options => options
+                .WithOrigins(new[] { 
+                    "http://localhost:3000",
+                    "http://localhost:8080",
+                    "http://localhost:4200",
+                    "http://localhost:5000",
+                    "http://localhost:5001",
+                    "http://localhost:44318",
+                    "http://localhost:44333",
+                })
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials()
+            );
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -63,7 +78,6 @@ namespace dotnet_webapi
                 endpoints.MapControllers();
             });
 
-            app.UseCors("permitir");
         }
     }
 }
