@@ -4,13 +4,20 @@
     ViewData["Title"] = "List of Peoples";
 }
 
-<table>
+<table class="border table">
     <thead>
         <th>Nombre</th>
         <th>Edad</th>
         <th>Acciones</th>
     </thead>
     <tbody>
-        
+        @foreach (var i in Model.control)
+            {
+                <tr>
+                    <td>@i.Nombre</td>
+                    <td>@i.Edad</td>
+                    <td>Acciones</td>
+                </tr>
+            }
     </tbody>
 </table>
