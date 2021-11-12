@@ -20,7 +20,10 @@
                     <tr>
                         <td>@i.Nombre</td>
                         <td>@i.Edad</td>
-                        <td>Acciones</td>
+                        <td>
+                            <a href="/persona/edit?id=@i.Id,action=edit"><button type="button" class="btn btn-success">Edit</button></a>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
                     </tr>
                 }
         </tbody>
