@@ -14,11 +14,11 @@ namespace dotnet_webapi_frontend.Pages.Persona
 {
     public class ListModel : PageModel
     {
-        public List<Models.Persona> control = new List<Models.Persona>();
+        public List<Models.Persona> control = new();
 
-        public async void OnGet()
+        public async Task OnGetAsync()
         {
-            List<Models.Persona> EmpInfo = new List<Models.Persona>();
+            List<Models.Persona> EmpInfo = new();
 
             using (var client = new HttpClient())
             {
@@ -31,7 +31,7 @@ namespace dotnet_webapi_frontend.Pages.Persona
                     var EmpResponse = res.Content.ReadAsStringAsync().Result;
                     EmpInfo = JsonConvert.DeserializeObject<List<Models.Persona>>(EmpResponse);
                 }
-                control = EmpInfo;
+                this.control = EmpInfo;
             }
         }        
     }
