@@ -4,21 +4,25 @@
     ViewData["Title"] = "List of Peoples";
 }
 
-
-<table class="border table">
-    <thead>
-        <th>Nombre</th>
-        <th>Edad</th>
-        <th>Acciones</th>
-    </thead>
-    <tbody>
-        @foreach (var i in Model.control)
-            {
-                <tr>
-                    <td>@i.Nombre</td>
-                    <td>@i.Edad</td>
-                    <td>Acciones</td>
-                </tr>
-            }
-    </tbody>
+<div class="container mb-3">
+    <a href="/persona/add" class="btn btn-info"> Add Person </a>
+</div>
+<div class="container">
+    <table class="border table">
+        <thead>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody>
+            @foreach (var i in Model.control)
+                {
+                    <tr>
+                        <td>@i.Nombre</td>
+                        <td>@i.Edad</td>
+                        <td>Acciones</td>
+                    </tr>
+                }
+        </tbody>
+</div>
 </table>

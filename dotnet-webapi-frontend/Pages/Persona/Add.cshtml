@@ -2,3 +2,15 @@
 @model dotnet_webapi_frontend.Pages.Persona.AddModel
 @{
 }
+
+Add Person Form
+<div class="container">
+    <form method="post" class="form-horizontal">
+        <label for="name">Nombre</label>
+        <input type="text" placeholder="Name" id="name" asp-for="persona.Nombre"/>
+        <label for="age">Age</label>
+        <input type="number" placeholder="Age" id="age" asp-for="persona.Edad"/>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a class="btn btn-danger" href="/persona/list" type="button">Cancel</a>
+    </form>
+</div>
