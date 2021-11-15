@@ -3,16 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PeopleListComponent } from './components/people-list/people-list.component';
+
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PersonaService } from './services/persona.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PeopleListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    PersonaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
