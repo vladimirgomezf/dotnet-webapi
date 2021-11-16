@@ -1,5 +1,3 @@
 export class Persona {
-    constructor(public Id:number, public Nombre:string, public Edad: number){
-        //
-    }
+  constructor(public id: number, public nombre: string, public edad: number) {}
 }
