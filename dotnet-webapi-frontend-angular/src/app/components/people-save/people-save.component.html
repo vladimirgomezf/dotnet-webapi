@@ -1,1 +1,24 @@
-<p>people-save works!</p>
+<div class="container">
+  <h2>Create Course</h2>
+
+  <div class="form-row" *ngIf="showMsg">
+    <div class="alert alert-{{ type }} col-md-12" role="alert">
+      {{ msg }}
+    </div>
+  </div>
+
+  <form #personaForm="ngForm">
+      <div class="form-row">
+        <div class="col-md-6">
+            <label for="nombre"> Name: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Enter the Name" class="form-control" #nombre ([(ngModel)]="persona.nombre")]>
+        </div>
+        <div class="col-md-6">
+            <label for="edad"> Age: </label>
+            <input type="text" name="edad" id="edad" placeholder="Enter the Age" class="form-control" #edad ([(ngModel)]="persona.edad")]>
+        </div>
+        <button class="btn btn-outline-primary btn-sm" (click)="save()">Save</button>
+        <a class="btn btn-outline-secondary btn-sm" [routerLink]="['/persona-list']">Cancel</a>
+      </div>
+  </form>
+</div>
