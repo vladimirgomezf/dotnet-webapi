@@ -7,11 +7,13 @@ import { PeopleListComponent } from './components/people-list/people-list.compon
 
 import { HttpClientModule } from '@angular/common/http';
 import { PersonaService } from './services/persona.service';
+import { PeopleSaveComponent } from './components/people-save/people-save.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PeopleListComponent
+    PeopleListComponent,
+    PeopleSaveComponent
   ],
   imports: [
     BrowserModule,
