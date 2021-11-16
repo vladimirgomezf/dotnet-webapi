@@ -6,15 +6,17 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-people-list',
   templateUrl: './people-list.component.html',
-  styleUrls: ['./people-list.component.css']
+  styleUrls: ['./people-list.component.css'],
 })
 export class PeopleListComponent implements OnInit, OnDestroy {
+  public persona: Persona[];
+  public subPersona: Subscription;
 
-  public persona: Persona[] = [];
-  public subPersona: Subscription = new Subscription;
+  constructor(public personaService: PersonaService) {
+    this.persona = [];
+    this.subPersona = new Subscription();
+  }
 
-  constructor(public personaService: PersonaService) { }
-  
   ngOnDestroy(): void {
     this.subPersona.unsubscribe();
   }
@@ -23,10 +25,9 @@ export class PeopleListComponent implements OnInit, OnDestroy {
     this.getAll();
   }
 
-  getAll(){
+  getAll() {
     this.subPersona = this.personaService.getAll().subscribe(data => {
       this.persona = data;
     });
   }
-
 }

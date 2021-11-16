@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PeopleListComponent } from './components/people-list/people-list.component';
 
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { PersonaService } from './services/persona.service';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { PersonaService } from './services/persona.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [
     PersonaService
